@@ -1,0 +1,11 @@
+C:\Users\saud_\Dropbox\Personal Development\EF_Sample_VSCore\EF_Example\EF_Example\bin\Debug\netcoreapp2.0\EF_Example.deps.json
+C:\Users\saud_\Dropbox\Personal Development\EF_Sample_VSCore\EF_Example\EF_Example\bin\Debug\netcoreapp2.0\EF_Example.runtimeconfig.json
+C:\Users\saud_\Dropbox\Personal Development\EF_Sample_VSCore\EF_Example\EF_Example\bin\Debug\netcoreapp2.0\EF_Example.runtimeconfig.dev.json
+C:\Users\saud_\Dropbox\Personal Development\EF_Sample_VSCore\EF_Example\EF_Example\bin\Debug\netcoreapp2.0\EF_Example.dll
+C:\Users\saud_\Dropbox\Personal Development\EF_Sample_VSCore\EF_Example\EF_Example\obj\Debug\netcoreapp2.0\EF_Example.csprojResolveAssemblyReference.cache
+C:\Users\saud_\Dropbox\Personal Development\EF_Sample_VSCore\EF_Example\EF_Example\obj\Debug\netcoreapp2.0\EF_Example.csproj.CoreCompileInputs.cache
+C:\Users\saud_\Dropbox\Personal Development\EF_Sample_VSCore\EF_Example\EF_Example\obj\Debug\netcoreapp2.0\EF_Example.AssemblyInfoInputs.cache
+C:\Users\saud_\Dropbox\Personal Development\EF_Sample_VSCore\EF_Example\EF_Example\obj\Debug\netcoreapp2.0\EF_Example.AssemblyInfo.cs
+C:\Users\saud_\Dropbox\Personal Development\EF_Sample_VSCore\EF_Example\EF_Example\bin\Debug\netcoreapp2.0\EF_Example.pdb
+C:\Users\saud_\Dropbox\Personal Development\EF_Sample_VSCore\EF_Example\EF_Example\obj\Debug\netcoreapp2.0\EF_Example.dll
+C:\Users\saud_\Dropbox\Personal Development\EF_Sample_VSCore\EF_Example\EF_Example\obj\Debug\netcoreapp2.0\EF_Example.pdb
