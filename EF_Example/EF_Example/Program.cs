@@ -1,47 +1,39 @@
-﻿using System;
-using System.Linq;
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using System;
 
 namespace EF_Example
 {
     class Program
     {
+        public IServiceProvider containter { get; private set; }
 
         static void Main(string[] args)
         {
-            ReadStudents();
-            WriteStudents();
-            ReadStudents();
+            var p = new Program();
+            p.InitializeServices();
+
+            var services = p.containter.GetService<StudentService>();
+            services.WriteStudents();
+            services.ReadStudents();
+
         }
 
-        private static void WriteStudents()
+        private void InitializeServices()
         {
-            using (var context = new StudentContext())
-            {
-                var student = new Student
-                {
-                    StudentID = 5,
-                    StudentName = "Tom Hanks"
-                };
-                context.Add(student);
-                int records = context.SaveChanges();
+            const string _ConnectionString = "Host=localhost;Username=user;Password=password123;Database=user;Pooling=true;";
 
-                Console.WriteLine($"{records} record added");
-            }
-            Console.WriteLine();
+            var services = new ServiceCollection();
+            services.AddTransient<StudentService>();
+            services.AddEntityFrameworkNpgsql().AddDbContext<StudentContext>(options => options.UseNpgsql(_ConnectionString));
+
+            containter = services.BuildServiceProvider();
+
+
         }
 
-        private static void ReadStudents()
-        {
-            using (var context = new StudentContext())
-            {
-                var _students = context.Students.Where(b=>b.StudentID == 1);
-                foreach(var student in _students)
-                {
-                    Console.WriteLine($"ID:{student.StudentID} Name:{student.StudentName}");
-                }
-            }
-            Console.WriteLine();
-        }
 
     }
 }
+
+
